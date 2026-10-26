@@ -7,7 +7,6 @@ import java.net.InetSocketAddress;
 
 public class Expense {
     public static void main(String[] args) throws IOException {
-        // Ο server ακούει εσωτερικά στη θύρα 8081
         HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
         
         server.createContext("/", new HttpHandler() {
